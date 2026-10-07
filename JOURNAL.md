@@ -10,16 +10,18 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 5h | 1 |
+| Week 1 | Tier 1 | 3h | 1 |
 
 ## Contents
 
-1. [2026-10-06 — Work session](#2026-10-06-work-session)
+1. [2026-10-06 — I started by creating the files of my project, then I opened the schematic editor but it froze cause my PC is bad. I went on slack for a while to research then I edited the schematic sheet data and en](#2026-10-06-i-started-by-creating-the-files-of-my-project-the)
 
 ## Design
 
-### 2026-10-06 — Work session
+### 2026-10-06 — I started by creating the files of my project, then I opened the schematic editor but it froze cause my PC is bad. I went on slack for a while to research then I edited the schematic sheet data and en
 
-**5h**
+**3h**
+
+I started by creating the files of my project, then I opened the schematic editor but it froze cause my PC is bad. I went on slack for a while to research then I edited the schematic sheet data and entered my project info, after that I opened the tutorial page and started following it. The tutorial had provided their own symbols, which I tried to import but couldn't, then I went on youtube to find a tutorial and found one. After that I successfully(took a few mins) imported the symbol in my schematic editor then start by adding ESP32 C3 microcontroller, I didn't know how to block a pin so, I googled it, blocked the pins and after that I added the button symbols, took a few tries cause it was crashing, and after that I added a OLED screen and at last I arranged all the schematics.
 
 [Timelapse](https://lookout.hackclub.com/api/media/43eafa3d-5137-4e1c-9535-d2d97ccbf592/video.mp4)
