@@ -35,7 +35,7 @@ And yeah, I'm also trying to get that 3D printer prize lol. HalfLife gives me a 
 The schematic was made in KiCad and shows how all the components are connected to the XIAO ESP32-C3.
 
 <div align="center">
-![Schematic](assets/schematic.png)
+[Schematic](assets/schematic.png)
 </div>
 
 ## The PCB Design
