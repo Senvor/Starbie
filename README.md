@@ -4,7 +4,7 @@
 
 **A tiny motion-controlled digital pet, basically a desktop Tamagotchi. Totally not a Starboy.**
 
-
+<img src="assets/Starbie.png" alt="Starbie" width="400">
 
 </div>
 
