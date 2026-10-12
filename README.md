@@ -1,6 +1,8 @@
+<div align="center">
+
 # Starbie
 
-A custom PCB project for a tiny interactive device that responds to movement.
+**A tiny motion-controlled digital pet, basically a desktop Tamagotchi. Totally not a Starboy.**
 
 ---
 
@@ -18,34 +20,46 @@ Some of the things packed into it:
 
 ## Why I built it
 
-I wanted to make something cool with hardware and decided to try building my own custom PCB. I also wanted to learn more about how sensors, microcontrollers and firmware work together in an actual project.
+I made Starbie for [HalfLife](https://halflife.hackclub.com), following their Week 1 PCB design tutorial.
 
-Starbie is basically me experimenting with all of that in one board.
+Since this is my second hardware project, I wanted to build something a bit more interesting than my first one. Starbie is a tiny motion-controlled digital pet, basically a desktop Tamagotchi (totally not a Starboy).
+
+And yeah, I'm also trying to get that 3D printer prize lol. HalfLife gives me a reason to actually design, build and document my projects instead of leaving them as ideas.
+
+## The Schematic
+
+The schematic was made in KiCad and shows how all the components are connected to the XIAO ESP32-C3.
+
+<div align="center">
+![Schematic](assets/schematic.png)
+</div>
 
 ## The PCB Design
 
 I designed the board using KiCad, with a custom shape and footprints for the components.
 
-A look at the PCB layout.
-
-![alt text](assests/image.png)
+<div align="center">
+  <img src="assets/PCB.png" alt="PCB" width="700" />
+  <br/>
+  <i>A look at the raw KiCad layout.</i>
+</div>
 
 ## Fabrication
 
-The board is designed around the XIAO ESP32-C3, with connectors for the OLED and MPU6050 modules.
+Here's the final manufacturing quote and preview from JLCPCB before it becomes reality:
 
-![alt text](assests\image copy.png)
+<div align="centre">
+    ![alt text](assets\JLCPCB.png)
+</div>
 
 ## Firmware
 
-The firmware will handle the sensor readings, display, RGB LED and button inputs.
-
-Still working on getting everything together.
+The firmware is written for the XIAO ESP32-C3 and handles Starbie's sensors, display, RGB LED and buttons. It reads movement data from the MPU6050 and temperature and humidity from the DHT11, with the OLED used to display information.
 
 ## Bill Of Materials
 
-The main components are the XIAO ESP32-C3, DHT11, SSD1306 OLED, MPU6050, RGB LED, Cherry MX switches and the required resistors and connectors.
+
 
 ---
 
-Still a work in progress. More soon.
+Still a work in progress.
