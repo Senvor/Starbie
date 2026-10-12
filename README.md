@@ -53,7 +53,7 @@ I designed the board using KiCad, with a custom shape and footprints for the com
 Here's the final manufacturing quote and preview from JLCPCB before it becomes reality:
 
 <div align="centre">
-    ![alt text](assets\JLCPCB.png)
+    [alt text](assets\JLCPCB.png)
 </div>
 
 ## Firmware
