@@ -35,7 +35,7 @@ And yeah, I'm also trying to get that 3D printer prize lol. HalfLife gives me a 
 The schematic was made in KiCad and shows how all the components are connected to the XIAO ESP32-C3.
 
 <div align="center">
-[Schematic](assets/schematic.png)
+<img src="assets/schematic.png" alt="Schematic">
 </div>
 
 ## The PCB Design
@@ -53,7 +53,7 @@ I designed the board using KiCad, with a custom shape and footprints for the com
 Here's the final manufacturing quote and preview from JLCPCB before it becomes reality:
 
 <div align="centre">
-    [alt text](assets\JLCPCB.png)
+    <img src="assets/JLCPCB.png" alt="JLCPCB"/>
 </div>
 
 ## Firmware
