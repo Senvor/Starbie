@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 12h | 5 |
+| Week 1 | Tier 1 | 13.8h | 5 |
 
 ## Contents
 
@@ -18,7 +18,7 @@
 2. [2026-10-08 – First of all, I opened my project and added an RGB light symbol to my schematic, arranging it with all the other symbols. I went to the tutorial page to see how  to assign symbols to footprints, then](#2026-10-08-first-of-all-i-opened-my-project-and-added-an-rgb)
 3. [2026-10-09 – I opened the board editor, but I couldn't find the "import from schematic" button. After searching for a while, I found it, but it wasn't working. I Googled why it wasn't working and found out that yo](#2026-10-09-i-opened-the-board-editor-but-i-couldnt-find-the-)
 4. [2026-10-11 – I opened the PCB editor and improved the star design to make it look even better. After that, I arranged the components inside the star, then I started routing them. I got stuck multiple times cause I](#2026-10-11-i-opened-the-pcb-editor-and-improved-the-star-des)
-5. [2026-10-11 – No TIME to Journal, DEADLINE CLOSE!!](#2026-10-11-no-time-to-journal-deadline-close)
+5. [2026-10-11 – I started by installing all the essential libraries and stuff, then after installation was done, I opened the firmware file and edited it a little bit according to the tutorial and coded my own RGB LE](#2026-10-11-i-started-by-installing-all-the-essential-librari)
 
 ## Design
 
@@ -62,10 +62,10 @@ I went on the Hack Club brand website and downloaded some HC theme stuff that I 
 
 [Timelapse](https://lookout.hackclub.com/api/media/e78f50ac-6b59-411c-8b1b-750112262d10/video.mp4)
 
-### 2026-10-11 – No TIME to Journal, DEADLINE CLOSE!!
+### 2026-10-11 – I started by installing all the essential libraries and stuff, then after installation was done, I opened the firmware file and edited it a little bit according to the tutorial and coded my own RGB LE
 
-**1.2h**
+**3h**
 
-No TIME to Journal, DEADLINE CLOSE!!
+I started by installing all the essential libraries and stuff, then after installation was done, I opened the firmware file and edited it a little bit according to the tutorial and coded my own RGB LED (the thing I added other than the tutorial). I did some thing off cam too like adding BOM - it was the most painful task in this project because one provider doesn't have all the materials, so I had to find the materials everywhere. It took me like 3 business days to complete the BOM properly and then I added the README.md file and explained my project it took me around 10 mins. At last I submitted the project but got returned so I did the changes they asked for like a 15 hours progress reel, adding more context to the readme and this journal.
 
 [Timelapse](https://lookout.hackclub.com/api/media/bfb29fa3-b61a-4168-83c3-51d52741d212/video.mp4)
