@@ -1,13 +1,13 @@
-Item,Amount Required,Amount to Buy,Cost (USD),Link
-XIAO ESP32-C3,1,1 unit,$7.16,https://hubtronics.in/seeed-studio-xiao-esp32c3
-MPU-6050 GY-521,1,1 unit,$1.99,https://hubtronics.in/gy-521-mpu-6050-gyro-accelerometer-module
-"5mm RGB LED, 4-leg",1,1 pack of 5,$0.32,https://hubtronics.in/5mm-rgb-led-4-legs
-"0.96-inch I2C OLED, white",1,1 unit,$1.78,https://hubtronics.in/0.96inch-i2c-4pin-oled-module-white
-Blank translucent Cherry 1u keycaps,2,1 pack of 5,$1.36,https://meckeys.com/shop/accessories/keyboard-accessories/keycaps/blank/blank-cherry-translucent-keycap-1u/?attribute_pa_keycap-theme=white-translucent
-Gateron Milky Pro Yellow 5-pin switches,2,1 pack of 10,$2.10,https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?attribute_pa_switch-variation=pro-milky-yellow
-"330Ω, 1/8W resistor",3,Buy enough for 3; confirm smallest pack,$0.11,https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/
-"10kΩ, 0.25W resistor",1,Buy enough for 1; confirm smallest pack,$0.11,https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/
-DHT11 temperature and humidity sensor,1,1 unit,$1.57,https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/
-Custom Starbie PCB,1,1 fabrication order,$8.40,https://jlcpcb.com/
+PART,QTY,UNIT,TOTAL,VENDOR
+XIAO ESP32-C3,1,$7.16,$7.16,https://hubtronics.in/seeed-studio-xiao-esp32c3
+MPU-6050 GY-521,1,$1.99,$1.99,https://hubtronics.in/gy-521-mpu-6050-gyro-accelerometer-module
+"5mm RGB LED, 4-leg",1,$0.32,$0.32,https://hubtronics.in/5mm-rgb-led-4-legs
+"0.96-inch I2C OLED, white",1,$1.78,$1.78,https://hubtronics.in/0.96inch-i2c-4pin-oled-module-white
+Blank translucent Cherry 1u keycaps,2,$0.27,$0.54,https://meckeys.com/shop/accessories/keyboard-accessories/keycaps/blank/blank-cherry-translucent-keycap-1u/?attribute_pa_keycap-theme=white-translucent
+Gateron Milky Pro Yellow 5-pin switches,2,$0.21,$0.42,https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?attribute_pa_switch-variation=pro-milky-yellow
+"330Ω, 1/8W resistor",3,$0.11,$0.33,https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/
+"10kΩ, 0.25W resistor",1,$0.11,$0.11,https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/
+DHT11 temperature and humidity sensor,1,$1.57,$1.57,https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/
+Custom Starbie PCB,1,$8.40,$8.40,https://jlcpcb.com/
 Shipping estimate,—,—,$12.69,
-TOTAL ESTIMATE INCLUDING SHIPPING,—,—,$37.59,
+"TOTAL ESTIMATE INCLUDING SHIPPING",—,—,$35.31,

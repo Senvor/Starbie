@@ -65,5 +65,3 @@ The firmware is written for the XIAO ESP32-C3 and handles Starbie's sensors, dis
 
 
 ---
-
-Still a work in progress.
