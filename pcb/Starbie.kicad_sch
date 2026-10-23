@@ -695,7 +695,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_RGBA"
+		(symbol "Device:LED_RAGB"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -715,7 +715,7 @@
 					)
 				)
 			)
-			(property "Value" "LED_RGBA"
+			(property "Value" "LED_RAGB"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -747,7 +747,7 @@
 					)
 				)
 			)
-			(property "Description" "RGB LED, red/green/blue/anode"
+			(property "Description" "RGB LED, red/anode/green/blue"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -780,7 +780,7 @@
 					)
 				)
 			)
-			(symbol "LED_RGBA_0_0"
+			(symbol "LED_RAGB_0_0"
 				(text "R"
 					(at -1.905 3.81 0)
 					(effects
@@ -806,7 +806,7 @@
 					)
 				)
 			)
-			(symbol "LED_RGBA_0_1"
+			(symbol "LED_RAGB_0_1"
 				(polyline
 					(pts
 						(xy -1.27 6.35) (xy -1.27 3.81)
@@ -1138,7 +1138,7 @@
 					)
 				)
 			)
-			(symbol "LED_RGBA_1_1"
+			(symbol "LED_RAGB_1_1"
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 2.54)
@@ -1158,9 +1158,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "GK"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1176,9 +1176,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "BK"
+					(name "GK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1194,9 +1194,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 -5.08 0)
 					(length 2.54)
-					(name "A"
+					(name "BK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4445,7 +4445,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
+		(lib_id "Device:LED_RAGB")
 		(at 39.37 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -4498,7 +4498,7 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED, red/green/blue/anode"
+		(property "Description" "RGB LED, red/anode/green/blue"
 			(at 39.37 93.98 0)
 			(hide yes)
 			(show_name no)
