@@ -60,6 +60,57 @@ Here's the final manufacturing quote and preview from JLCPCB before it becomes r
 
 The firmware is written for the XIAO ESP32-C3 and handles Starbie's sensors, display, RGB LED and buttons. It reads movement data from the MPU6050 and temperature and humidity from the DHT11, with the OLED used to display information.
 
+### Controls
+
+Starbie has two buttons.
+
+| Button | Pin | What it does |
+|---|---|---|
+| Button 1 (SW1) | GPIO2 (XIAO D2) | Opens the radial menu. While the menu is open, it confirms the highlighted action. |
+| Button 2 (SW2) | GPIO3 (XIAO D3) | Shows or hides the stats screen. It never changes the pet. |
+
+Both buttons are debounced in software (30 ms).
+
+### Tilt menu
+
+1. Press **Button 1** to open the menu. The way you are holding Starbie at that moment becomes the centre.
+2. Tilt Starbie. The MPU6050 accelerometer moves a ball around the screen. The screen is split into four sectors by two diagonal lines: **NAP** (top), **PLAY** (right), **FEED** (bottom) and **PET** (left).
+3. The sector in the direction you tilt is highlighted. A small dead zone in the middle means nothing is highlighted until you tilt past it.
+4. Press **Button 1** again to confirm. If nothing is highlighted, nothing happens and the menu stays open.
+5. Pressing **Button 2** while the menu is open leaves the menu without choosing anything and shows the stats screen instead.
+
+Which physical tilt direction moves the ball to which sector depends on how the MPU6050 is mounted. If the ball moves the wrong way, change `SWAP_MPU_AXES`, `MENU_X_DIRECTION` or `MENU_Y_DIRECTION` at the top of `Starbie.ino`.
+
+Each action changes the pet's three stats (each stays between 0 and 100):
+
+| Action | Joy | Energy | Fullness | What you see |
+|---|---|---|---|---|
+| NAP | +1 | +18 | −4 | Starbie stops and sleeps with floating Zs for 48 seconds |
+| PLAY | +12 | −9 | −5 | Two fast laps across the screen with hearts |
+| FEED | +3 | +2 | +18 | A small wiggle, then a jump |
+| PET | +7 | 0 | 0 | A small wiggle, a jump, and hearts |
+
+**Shake:** on the pet screen, shaking Starbie gives +5 joy, −2 energy and −1 fullness, wakes a sleeping pet, and has a 0.65 second cooldown. Shaking does nothing while the menu or stats screen is open.
+
+Stats are saved to flash after every action and every shake, so Starbie remembers them after a reset. Stats do not drain over time; they only change when you use the menu or shake Starbie.
+
+### Status LED
+
+The RGB LED shows Starbie's mood. The firmware checks the stats in this order and shows the first one that matches:
+
+| Colour | Condition | Meaning |
+|---|---|---|
+| Yellow | Fullness is 25 or below | Hungry |
+| Blue | Energy is 25 or below | Tired |
+| Red | Joy is 25 or below | Needs play |
+| Green | None of the above (all three stats are above 25) | Happy |
+
+If more than one stat is low, the first row that matches wins (yellow, then blue, then red). The LED is on/off only (no dimming or colour mixing), and yellow is red and green on together.
+
+### Stats screen
+
+Press **Button 2** to see Starbie's JOY, ENERGY and FULL bars with their numbers, plus the room temperature (°C) and humidity (%) from the DHT11. If the DHT11 has not produced a reading yet, the screen shows `--`. The temperature and humidity are display-only; they do not affect the pet or the LED.
+
 ## Bill Of Materials
 
 | Item | Qty | Supplier | Cost/item | Total Cost | Link |
@@ -71,7 +122,7 @@ The firmware is written for the XIAO ESP32-C3 and handles Starbie's sensors, dis
 | Blank translucent Cherry 1u keycaps (pack of 5) | 1 | meckeys | $1.36 | $1.36 | https://meckeys.com/shop/accessories/keyboard-accessories/keycaps/blank/blank-ch |
 | Gateron Milky Pro Yellow 5-pin switches (pack of 10) | 1 | meckeys | $2.10 | $2.10 | https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?attribute_pa_switch-variation=pro-milky-yellow |
 | 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
-| 10kΩ, 0.25W resistor (pack of 30) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/ |
+| 10kΩ, 1/8W resistor (pack of 30) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/ |
 | DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
 | Custom Starbie PCB | 1 | JLCPCB | $8.40 | $8.40 | https://jlcpcb.com/ |
 | Estimated total shipping | 1 | — | — | $12.70 | — |
