@@ -4,6 +4,8 @@
 
 **A tiny motion-controlled digital pet, basically a desktop Tamagotchi. Totally not a Starboy.**
 
+![Hackatime](https://hackatime.hackclub.com/api/v1/badge/U0B4TE3MN1G/Senvor/Starbie)
+
 <img src="assets/Starbie.png" alt="Starbie" width="400">
 
 </div>
