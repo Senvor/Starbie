@@ -4,33 +4,40 @@
 
 **A tiny motion-controlled digital pet, basically a desktop Tamagotchi. Totally not a Starboy.**
 
+A star-shaped PCB pet you tilt, shake and feed, with an OLED face, a mood LED and two clicky switches.
+
 ![Hackatime](https://hackatime.hackclub.com/api/v1/badge/U0B4TE3MN1G/Senvor/Starbie)
 
-<img src="assets/Starbie.png" alt="Starbie" width="400">
+<img src="assets/Starbie.png" alt="Starbie board render" width="500" />
 
 </div>
 
 ---
 
-## What exactly is it?
+**Status:** Shipped
+
+## What is it?
 
 Starbie is a small interactive device built around the XIAO ESP32-C3. It uses a bunch of sensors and other components to make it actually do stuff.
 
 Some of the things packed into it:
 
-- Movement detection using the MPU6050.
-- Temperature and humidity readings using the DHT11.
-- An OLED display to show information.
-- An RGB LED for visual feedback.
-- Cherry MX switches for physical input.
+- **Movement detection** using the MPU6050, so you steer the menu by tilting and play by shaking
+- **Temperature and humidity** readings from the DHT11
+- **An OLED display** for the pet, the menu and the stats
+- **An RGB LED** that shows the pet's mood
+- **Two mechanical switches** (Gateron Milky Pro Yellow with Cherry-style keycaps) for input
+- **Stats saved to flash**, so your pet remembers you after a reset
 
-## Why I built it
+## Why I Built It
 
 I made Starbie for [HalfLife](https://halflife.hackclub.com), following their Week 1 PCB design tutorial.
 
 Since this is my second hardware project, I wanted to build something a bit more interesting than my first one. Starbie is a tiny motion-controlled digital pet, basically a desktop Tamagotchi (totally not a Starboy).
 
 And yeah, I'm also trying to get that 3D printer prize lol. HalfLife gives me a reason to actually design, build and document my projects instead of leaving them as ideas.
+
+The full build log is in [JOURNAL.md](JOURNAL.md).
 
 ## The Schematic
 
@@ -54,7 +61,7 @@ I designed the board using KiCad, with a custom shape and footprints for the com
 
 Here's the final manufacturing quote and preview from JLCPCB before it becomes reality:
 
-<div align="centre">
+<div align="center">
     <img src="assets/JLCPCB.png" alt="JLCPCB" width="800"/>
 </div>
 
@@ -62,14 +69,29 @@ Here's the final manufacturing quote and preview from JLCPCB before it becomes r
 
 The firmware is written for the XIAO ESP32-C3 and handles Starbie's sensors, display, RGB LED and buttons. It reads movement data from the MPU6050 and temperature and humidity from the DHT11, with the OLED used to display information.
 
+### Wiring (pins)
+
+| Part | XIAO pin | ESP32-C3 GPIO |
+|---|---|---|
+| OLED + MPU6050 SDA | D5 | 7 |
+| OLED + MPU6050 SCL | D4 | 6 |
+| DHT11 data | D1 | 3 |
+| Button 1 | D2 | 4 |
+| Button 2 | D3 | 5 |
+| LED red | D0 | 2 |
+| LED green | D6 | 21 |
+| LED blue | D7 | 20 |
+
+The RGB LED is common anode (tied to 3.3V), so the firmware drives a colour LOW to turn it on. The OLED is expected at I2C address `0x3C` and the MPU6050 at `0x68`.
+
 ### Controls
 
 Starbie has two buttons.
 
 | Button | Pin | What it does |
 |---|---|---|
-| Button 1 (SW1) | GPIO2 (XIAO D2) | Opens the radial menu. While the menu is open, it confirms the highlighted action. |
-| Button 2 (SW2) | GPIO3 (XIAO D3) | Shows or hides the stats screen. It never changes the pet. |
+| Button 1 (SW1) | GPIO4 (XIAO D2) | Opens the radial menu. While the menu is open, it confirms the highlighted action. |
+| Button 2 (SW2) | GPIO5 (XIAO D3) | Shows or hides the stats screen. It never changes the pet. |
 
 Both buttons are debounced in software (30 ms).
 
@@ -113,7 +135,24 @@ If more than one stat is low, the first row that matches wins (yellow, then blue
 
 Press **Button 2** to see Starbie's JOY, ENERGY and FULL bars with their numbers, plus the room temperature (°C) and humidity (%) from the DHT11. If the DHT11 has not produced a reading yet, the screen shows `--`. The temperature and humidity are display-only; they do not affect the pet or the LED.
 
+## Getting Started
+
+The firmware is one file, `Starbie.ino`.
+
+1. Open `Starbie.ino` in the [Arduino IDE](https://www.arduino.cc/en/software) with ESP32 board support installed, and pick the **Seeed XIAO ESP32-C3** board.
+2. Install these libraries from **Sketch > Include Library > Manage Libraries** (click **Install All** when it asks about dependencies):
+   - Adafruit GFX Library
+   - Adafruit SSD1306
+   - Adafruit MPU6050
+   - DHT sensor library
+3. Change anything you want in the **BEGINNER SETTINGS** section at the top (pins, starting stats, tilt directions, the pet sprite).
+4. Upload.
+
+Want a fresh pet? Set `RESET_SAVED_PET_ON_BOOT` to `true`, upload once, then set it back to `false`.
+
 ## Bill Of Materials
+
+Also in [BOM.csv](BOM.csv).
 
 | Item | Qty | Supplier | Cost/item | Total Cost | Link |
 |---|---:|---|---:|---:|---|
@@ -126,7 +165,40 @@ Press **Button 2** to see Starbie's JOY, ENERGY and FULL bars with their numbers
 | 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
 | 10kΩ, 1/8W resistor (pack of 30) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/ |
 | DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
-| Custom Starbie PCB | 1 | JLCPCB | $8.40 | $8.40 | https://jlcpcb.com/ |
+| Custom Starbie PCB | 1 | robu | $20.22 | $20.22 | https://robu.in/ |
 | Estimated total shipping | 1 | — | — | $12.70 | — |
 
----
+## Tech Stack
+
+- **KiCad** - schematic and PCB design
+- **JLCPCB** - PCB fabrication quote and preview
+- **Arduino (C++)** - the firmware
+- **Seeed XIAO ESP32-C3** - the brain
+- **Adafruit GFX / SSD1306 / MPU6050 + DHT sensor library** - display and sensor drivers
+- **Preferences (ESP32)** - saving the pet's stats to flash
+
+## Project Structure
+
+```
+Starbie/
+├── Starbie.ino       # the whole firmware, one file
+├── pcb/              # KiCad project, schematic and PCB
+├── output files/     # fabrication outputs (Starbie.zip)
+├── assets/           # README images
+├── BOM.csv           # bill of materials
+└── JOURNAL.md        # devlog, synced from HalfLife
+```
+
+## What I Learned
+
+From the journal:
+
+- Importing custom symbols and footprints into KiCad, and assigning footprints to symbols
+- Getting the schematic into the PCB editor (through the project manager) and fixing DRC errors like overlapping edge cuts
+- Using vias to route on both layers instead of cramming everything onto the front copper
+- Sourcing a BOM across multiple suppliers when no single shop has everything
+- Swapping a part for one that's actually on the market and updating the PCB to match
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You're free to use, modify, and share it, as long as the original copyright notice is kept.
