@@ -59,10 +59,10 @@ I designed the board using KiCad, with a custom shape and footprints for the com
 
 ## Fabrication
 
-Here's the final manufacturing quote and preview from JLCPCB before it becomes reality:
+Here's the final manufacturing quote and preview from Robu before it becomes reality:
 
 <div align="center">
-    <img src="assets/JLCPCB.png" alt="JLCPCB" width="800"/>
+    <img src="assets/Robu.png" alt="Robu" width="800"/>
 </div>
 
 ## Firmware
@@ -165,13 +165,13 @@ Also in [BOM.csv](BOM.csv).
 | 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
 | 10kΩ, 1/8W resistor (pack of 30) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/ |
 | DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
-| Custom Starbie PCB | 1 | robu | $20.22 | $20.22 | https://robu.in/ |
-| Estimated total shipping | 1 | — | — | $12.70 | — |
+| Custom Starbie PCB | 1 | robu | $20.05 | $20.05 | https://robu.in/ |
+| Total shipping | 1 | — | — | $2.38 | — |
 
 ## Tech Stack
 
 - **KiCad** - schematic and PCB design
-- **JLCPCB** - PCB fabrication quote and preview
+- **Robu** - PCB fabrication quote and preview
 - **Arduino (C++)** - the firmware
 - **Seeed XIAO ESP32-C3** - the brain
 - **Adafruit GFX / SSD1306 / MPU6050 + DHT sensor library** - display and sensor drivers
