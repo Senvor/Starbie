@@ -8,13 +8,11 @@ A star-shaped PCB pet you tilt, shake and feed, with an OLED face, a mood LED an
 
 ![Hackatime](https://hackatime.hackclub.com/api/v1/badge/U0B4TE3MN1G/Senvor/Starbie)
 
-<img src="assets/Starbie.png" alt="Starbie board render" width="500" />
+<img src="assets/render.png" alt="Starbie 3D render with all parts mounted" width="500" />
 
 </div>
 
 ---
-
-**Status:** Shipped
 
 ## What is it?
 
@@ -52,9 +50,7 @@ The schematic was made in KiCad and shows how all the components are connected t
 I designed the board using KiCad, with a custom shape and footprints for the components.
 
 <div align="center">
-  <img src="assets/PCB.png" alt="Starbie 3D render with all parts mounted" width="700" />
-  <br/>
-  <i>3D render of the assembled board: XIAO ESP32-C3, OLED, DHT11, RGB LED, Cherry MX switches with translucent keycaps, and resistors.</i>
+  <img src="assets/PCB.png" alt="Starbie PCB layout in KiCad" width="700" />
 </div>
 
 ## Fabrication
