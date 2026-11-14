@@ -52,9 +52,9 @@ The schematic was made in KiCad and shows how all the components are connected t
 I designed the board using KiCad, with a custom shape and footprints for the components.
 
 <div align="center">
-  <img src="assets/PCB.png" alt="PCB" width="700" />
+  <img src="assets/PCB.png" alt="Starbie 3D render with all parts mounted" width="700" />
   <br/>
-  <i>A look at the raw KiCad layout.</i>
+  <i>3D render of the assembled board: XIAO ESP32-C3, OLED, DHT11, RGB LED, Cherry MX switches with translucent keycaps, and resistors.</i>
 </div>
 
 ## Fabrication
