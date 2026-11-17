@@ -159,7 +159,7 @@ Also in [BOM.csv](BOM.csv).
 | Blank translucent Cherry 1u keycaps (pack of 5) | 1 | meckeys | $1.36 | $1.36 | https://meckeys.com/shop/accessories/keyboard-accessories/keycaps/blank/blank-cherry-translucent-keycap-1u/ |
 | Gateron Milky Pro Yellow 5-pin switches (pack of 10) | 1 | meckeys | $2.10 | $2.10 | https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?attribute_pa_switch-variation=pro-milky-yellow |
 | 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
-| 10kΩ, 0.25W metal film resistor (pack of 30) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/10k-ohm-0-25w-metal-film-resistor-pack-of-100/ |
+| 10kΩ, 0.25W 1% metal film resistor (pack of 10) | 1 | hubtronics | $0.16 | $0.16 | https://hubtronics.in/mfr-10k-ohms |
 | DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
 | Custom Starbie PCB | 1 | robu | $20.05 | $20.05 | https://robu.in/ |
 | Total shipping | 1 | — | — | $2.38 | — |
