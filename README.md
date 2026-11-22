@@ -148,7 +148,7 @@ Want a fresh pet? Set `RESET_SAVED_PET_ON_BOOT` to `true`, upload once, then set
 
 ## Bill Of Materials
 
-Also in [BOM.csv](BOM.csv). Grouped by supplier. Subtotals exclude shipping.
+Also in [BOM.csv](BOM.csv). Grouped by supplier. Subtotals exclude shipping. StacksKB prices are what was actually charged (₹ converted at the payment rate, 1 INR = $0.01167).
 
 | Item | Qty | Supplier | Cost/item | Total Cost | Status | Link |
 |---|---:|---|---:|---:|---|---|
@@ -162,11 +162,12 @@ Also in [BOM.csv](BOM.csv). Grouped by supplier. Subtotals exclude shipping.
 | DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | Ordered | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
 | Custom Starbie PCB | 1 | robu | $20.05 | $20.05 | To order | https://robu.in/ |
 | **Robu subtotal** | | | | **$21.73** | | |
-| Blank translucent Cherry 1u keycaps (pack of 5) | 1 | meckeys | $1.36 | $1.36 | To order | https://meckeys.com/shop/accessories/keyboard-accessories/keycaps/blank/blank-cherry-translucent-keycap-1u/ |
-| Gateron Milky Pro Yellow 5-pin switches (pack of 10) | 1 | meckeys | $2.10 | $2.10 | To order | https://meckeys.com/shop/accessories/keyboard-accessories/key-switches/gateron-mechanical-pro-switch-5pin/?attribute_pa_switch-variation=pro-milky-yellow |
-| **Meckeys subtotal** | | | | **$3.46** | | |
-| Total shipping | 1 | | | $2.38 | | |
-| **Grand total** | | | | **$39.00** | | |
+| Numpad+ keycaps, Black Gradient | 1 | stackskb | $1.17 | $1.17 | Ordered | https://stackskb.com/store/numpad-keycaps |
+| Gateron KS-3X1 Milky Yellow Pro 5-pin switches (pack of 10) | 1 | stackskb | $2.22 | $2.22 | Ordered | https://stackskb.com/store/gateron-ks-3x1p-pro-yellows/ |
+| **StacksKB subtotal** | | | | **$3.39** | | |
+| StacksKB shipping (Standard) | 1 | stackskb | $1.52 | $1.52 | Paid | |
+| Other shipping (Hubtronics + Robu) | 1 | | | $2.38 | | |
+| **Grand total** | | | | **$40.45** | | |
 ## Tech Stack
 
 - **KiCad** - schematic and PCB design
