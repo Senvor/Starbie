@@ -150,24 +150,24 @@ Want a fresh pet? Set `RESET_SAVED_PET_ON_BOOT` to `true`, upload once, then set
 
 Also in [BOM.csv](BOM.csv). Grouped by supplier. Subtotals exclude shipping. StacksKB prices are what was actually charged (₹ converted at the payment rate, 1 INR = $0.01167).
 
-| Item | Qty | Supplier | Cost/item | Total Cost | Status | Link |
-|---|---:|---|---:|---:|---|---|
-| XIAO ESP32-C3 | 1 | hubtronics | $7.17 | $7.17 | Ordered | https://hubtronics.in/seeed-studio-xiao-esp32c3 |
-| MPU-6050 GY-521 | 1 | hubtronics | $2.00 | $2.00 | Ordered | https://hubtronics.in/gy-521-mpu-6050-gyro-accelerometer-module |
-| 5mm RGB LED, 4-leg (pack of 5) | 1 | hubtronics | $0.32 | $0.32 | Ordered | https://hubtronics.in/5mm-rgb-led-4-legs |
-| 0.96-inch I2C OLED, white | 1 | hubtronics | $1.78 | $1.78 | Ordered | https://hubtronics.in/0.96inch-i2c-4pin-oled-module-white |
-| 10kΩ, 0.25W 1% metal film resistor (pack of 10) | 1 | hubtronics | $0.16 | $0.16 | Ordered | https://hubtronics.in/mfr-10k-ohms |
-| **Hubtronics subtotal** | | | | **$11.43** | | |
-| 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | Ordered | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
-| DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | Ordered | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
-| Custom Starbie PCB | 1 | robu | $20.05 | $20.05 | To order | https://robu.in/ |
-| **Robu subtotal** | | | | **$21.73** | | |
-| Numpad+ keycaps, Black Gradient | 1 | stackskb | $1.17 | $1.17 | Ordered | https://stackskb.com/store/numpad-keycaps |
-| Gateron KS-3X1 Milky Yellow Pro 5-pin switches (pack of 10) | 1 | stackskb | $2.22 | $2.22 | Ordered | https://stackskb.com/store/gateron-ks-3x1p-pro-yellows/ |
-| **StacksKB subtotal** | | | | **$3.39** | | |
-| StacksKB shipping (Standard) | 1 | stackskb | $1.52 | $1.52 | Paid | |
-| Other shipping (Hubtronics + Robu) | 1 | | | $2.38 | | |
-| **Grand total** | | | | **$40.45** | | |
+| Item | Qty | Supplier | Cost/item | Total Cost | Link |
+|---|---:|---|---:|---:|---|
+| XIAO ESP32-C3 | 1 | hubtronics | $7.17 | $7.17 | https://hubtronics.in/seeed-studio-xiao-esp32c3 |
+| MPU-6050 GY-521 | 1 | hubtronics | $2.00 | $2.00 | https://hubtronics.in/gy-521-mpu-6050-gyro-accelerometer-module |
+| 5mm RGB LED, 4-leg (pack of 5) | 1 | hubtronics | $0.32 | $0.32 | https://hubtronics.in/5mm-rgb-led-4-legs |
+| 0.96-inch I2C OLED, white | 1 | hubtronics | $1.78 | $1.78 | https://hubtronics.in/0.96inch-i2c-4pin-oled-module-white |
+| 10kΩ, 0.25W 1% metal film resistor (pack of 10) | 1 | hubtronics | $0.16 | $0.16 | https://hubtronics.in/mfr-10k-ohms |
+| **Hubtronics subtotal** | | | | **$11.43** | |
+| 330Ω, 1/8W resistor (pack of 42) | 1 | robu | $0.11 | $0.11 | https://robu.in/product/330-ohm-1-8w-through-hole-resistor-pack-of-5000/ |
+| DHT11 temperature and humidity sensor | 1 | robu | $1.57 | $1.57 | https://robu.in/product/dht-11-digital-temperature-and-humidity-sensor/ |
+| Custom Starbie PCB | 1 | robu | $20.05 | $20.05 | https://robu.in/ |
+| **Robu subtotal** | | | | **$21.73** | |
+| Numpad+ keycaps, Black Gradient | 1 | stackskb | $1.17 | $1.17 | https://stackskb.com/store/numpad-keycaps |
+| Gateron KS-3X1 Milky Yellow Pro 5-pin switches (pack of 10) | 1 | stackskb | $2.22 | $2.22 | https://stackskb.com/store/gateron-ks-3x1p-pro-yellows/ |
+| **StacksKB subtotal** | | | | **$3.39** | |
+| StacksKB shipping (Standard) | 1 | stackskb | $1.52 | $1.52 | |
+| Other shipping (Hubtronics + Robu) | 1 | | | $2.38 | |
+| **Grand total** | | | | **$40.45** | |
 ## Tech Stack
 
 - **KiCad** - schematic and PCB design
